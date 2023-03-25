@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Músicas</title>
+    <title>Contato</title>
 </head>
 <body>
     <header>
-
+        <img src="img/prof.png" width="750" height="400">
     </header>
     <nav>
         <a href="index.html">HOME</a> |
@@ -16,4 +16,58 @@
         <a href="planos.html">Planos</a> |
         <a href="contato.html">Contato</a>
     </nav>
+    <h1>Entre em contato para fazer um plano de aula</h1>
+    <main>
+        <form method="get" action="">
+            <fieldset>
+                <legend>
+                    Formulário de contato
+                </legend>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" required><br>
+                
+                <label for="data">Data de nascimento:</label>
+                <input type="date" name="nasc" id="data" required><br>
+
+                <label>Tipo de plano:</label><br>
+                <input type="radio" name="plano" id="gratis" value="gratis" checked>
+                <label for="gratis">Grátis</label><br>
+                <input type="radio" name="plano" id="mensal" value="mensal">
+                <label for="mensal">Mensal</label><br>
+                <input type="radio" name="plano" id="trimensal" value="trimensal">
+                <label for="trimensal">Trimensal</label><br>
+                <input type="radio" name="plano" id="semestral" value="semestral">
+                <label for="semestral">Semestral</label><br>
+                <input type="radio" name="plano" id="anual" value="anual">
+                <label for="anual">Anual</label><br>
+                
+                <label>Quais linguagens te interessam?</label><br>
+                <input type="checkbox" name="ling" id="py" value="P">
+                <label for="py">Python</label><br>
+                <input type="checkbox" name="ling" id="java" value="J">
+                <label for="java">Java</label><br>
+                <input type="checkbox" name="ling" id="c" value="C">
+                <label for="c">C#</label><br>
+                <input type="checkbox" name="ling" id="r" value="R">
+                <label for="r">R</label><br>
+
+                    <label>Qual é o seu foco?</label>
+                <select name="foco">
+                    <option value=""></option>
+                    <option value="P">Python</option>
+                    <option value="J">Java</option>
+                    <option value="C">C#</option>
+                    <option value="R">R</option>
+                </select><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id=email><br><br>
+
+                <button type="submit">Enviar</button>
+             </fieldset>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <em>Desenvolvido por Fábio Sulas.</em>
+    </footer>
 </body>
